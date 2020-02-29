@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\master\\SE\\RealEstates\\API\\API.csproj": {}
+    "d:\\master\\SE\\RealEstates\\API\\API.csproj": {}
   },
   "projects": {
-    "D:\\master\\SE\\RealEstates\\API\\API.csproj": {
+    "d:\\master\\SE\\RealEstates\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\master\\SE\\RealEstates\\API\\API.csproj",
+        "projectUniqueName": "d:\\master\\SE\\RealEstates\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "D:\\master\\SE\\RealEstates\\API\\API.csproj",
+        "projectPath": "d:\\master\\SE\\RealEstates\\API\\API.csproj",
         "packagesPath": "C:\\Users\\moham\\.nuget\\packages\\",
-        "outputPath": "D:\\master\\SE\\RealEstates\\API\\obj\\",
+        "outputPath": "d:\\master\\SE\\RealEstates\\API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -30,8 +30,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\master\\SE\\RealEstates\\Application\\Application.csproj": {
-                "projectPath": "D:\\master\\SE\\RealEstates\\Application\\Application.csproj"
+              "d:\\master\\SE\\RealEstates\\Application\\Application.csproj": {
+                "projectPath": "d:\\master\\SE\\RealEstates\\Application\\Application.csproj"
               }
             }
           }
@@ -66,14 +66,14 @@
         }
       }
     },
-    "D:\\master\\SE\\RealEstates\\Application\\Application.csproj": {
+    "d:\\master\\SE\\RealEstates\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\master\\SE\\RealEstates\\Application\\Application.csproj",
+        "projectUniqueName": "d:\\master\\SE\\RealEstates\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "D:\\master\\SE\\RealEstates\\Application\\Application.csproj",
+        "projectPath": "d:\\master\\SE\\RealEstates\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\moham\\.nuget\\packages\\",
-        "outputPath": "D:\\master\\SE\\RealEstates\\Application\\obj\\",
+        "outputPath": "d:\\master\\SE\\RealEstates\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -92,11 +92,11 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "D:\\master\\SE\\RealEstates\\Domain\\Domain.csproj": {
-                "projectPath": "D:\\master\\SE\\RealEstates\\Domain\\Domain.csproj"
+              "d:\\master\\SE\\RealEstates\\Domain\\Domain.csproj": {
+                "projectPath": "d:\\master\\SE\\RealEstates\\Domain\\Domain.csproj"
               },
-              "D:\\master\\SE\\RealEstates\\Persistence\\Persistence.csproj": {
-                "projectPath": "D:\\master\\SE\\RealEstates\\Persistence\\Persistence.csproj"
+              "d:\\master\\SE\\RealEstates\\Persistence\\Persistence.csproj": {
+                "projectPath": "d:\\master\\SE\\RealEstates\\Persistence\\Persistence.csproj"
               }
             }
           }
@@ -131,14 +131,14 @@
         }
       }
     },
-    "D:\\master\\SE\\RealEstates\\Domain\\Domain.csproj": {
+    "d:\\master\\SE\\RealEstates\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\master\\SE\\RealEstates\\Domain\\Domain.csproj",
+        "projectUniqueName": "d:\\master\\SE\\RealEstates\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "D:\\master\\SE\\RealEstates\\Domain\\Domain.csproj",
+        "projectPath": "d:\\master\\SE\\RealEstates\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\moham\\.nuget\\packages\\",
-        "outputPath": "D:\\master\\SE\\RealEstates\\Domain\\obj\\",
+        "outputPath": "d:\\master\\SE\\RealEstates\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -189,14 +189,14 @@
         }
       }
     },
-    "D:\\master\\SE\\RealEstates\\Persistence\\Persistence.csproj": {
+    "d:\\master\\SE\\RealEstates\\Persistence\\Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\master\\SE\\RealEstates\\Persistence\\Persistence.csproj",
+        "projectUniqueName": "d:\\master\\SE\\RealEstates\\Persistence\\Persistence.csproj",
         "projectName": "Persistence",
-        "projectPath": "D:\\master\\SE\\RealEstates\\Persistence\\Persistence.csproj",
+        "projectPath": "d:\\master\\SE\\RealEstates\\Persistence\\Persistence.csproj",
         "packagesPath": "C:\\Users\\moham\\.nuget\\packages\\",
-        "outputPath": "D:\\master\\SE\\RealEstates\\Persistence\\obj\\",
+        "outputPath": "d:\\master\\SE\\RealEstates\\Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -215,8 +215,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "D:\\master\\SE\\RealEstates\\Domain\\Domain.csproj": {
-                "projectPath": "D:\\master\\SE\\RealEstates\\Domain\\Domain.csproj"
+              "d:\\master\\SE\\RealEstates\\Domain\\Domain.csproj": {
+                "projectPath": "d:\\master\\SE\\RealEstates\\Domain\\Domain.csproj"
               }
             }
           }
@@ -230,6 +230,14 @@
       "frameworks": {
         "netstandard2.0": {
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
