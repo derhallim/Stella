@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\master\\SE\\RealEstates\\Domain\\Domain.csproj": {}
+    "D:\\master\\SE\\RealEstates\\Domain\\Domain.csproj": {}
   },
   "projects": {
-    "d:\\master\\SE\\RealEstates\\Domain\\Domain.csproj": {
+    "D:\\master\\SE\\RealEstates\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\master\\SE\\RealEstates\\Domain\\Domain.csproj",
+        "projectUniqueName": "D:\\master\\SE\\RealEstates\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "d:\\master\\SE\\RealEstates\\Domain\\Domain.csproj",
+        "projectPath": "D:\\master\\SE\\RealEstates\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\moham\\.nuget\\packages\\",
-        "outputPath": "d:\\master\\SE\\RealEstates\\Domain\\obj\\",
+        "outputPath": "D:\\master\\SE\\RealEstates\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

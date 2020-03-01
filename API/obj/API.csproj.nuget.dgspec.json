@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\master\\SE\\RealEstates\\API\\API.csproj": {}
+    "D:\\master\\SE\\RealEstates\\API\\API.csproj": {}
   },
   "projects": {
-    "d:\\master\\SE\\RealEstates\\API\\API.csproj": {
+    "D:\\master\\SE\\RealEstates\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\master\\SE\\RealEstates\\API\\API.csproj",
+        "projectUniqueName": "D:\\master\\SE\\RealEstates\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "d:\\master\\SE\\RealEstates\\API\\API.csproj",
+        "projectPath": "D:\\master\\SE\\RealEstates\\API\\API.csproj",
         "packagesPath": "C:\\Users\\moham\\.nuget\\packages\\",
-        "outputPath": "d:\\master\\SE\\RealEstates\\API\\obj\\",
+        "outputPath": "D:\\master\\SE\\RealEstates\\API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -30,8 +30,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "d:\\master\\SE\\RealEstates\\Application\\Application.csproj": {
-                "projectPath": "d:\\master\\SE\\RealEstates\\Application\\Application.csproj"
+              "D:\\master\\SE\\RealEstates\\Application\\Application.csproj": {
+                "projectPath": "D:\\master\\SE\\RealEstates\\Application\\Application.csproj"
               }
             }
           }
@@ -66,14 +66,14 @@
         }
       }
     },
-    "d:\\master\\SE\\RealEstates\\Application\\Application.csproj": {
+    "D:\\master\\SE\\RealEstates\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\master\\SE\\RealEstates\\Application\\Application.csproj",
+        "projectUniqueName": "D:\\master\\SE\\RealEstates\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "d:\\master\\SE\\RealEstates\\Application\\Application.csproj",
+        "projectPath": "D:\\master\\SE\\RealEstates\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\moham\\.nuget\\packages\\",
-        "outputPath": "d:\\master\\SE\\RealEstates\\Application\\obj\\",
+        "outputPath": "D:\\master\\SE\\RealEstates\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -92,11 +92,11 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "d:\\master\\SE\\RealEstates\\Domain\\Domain.csproj": {
-                "projectPath": "d:\\master\\SE\\RealEstates\\Domain\\Domain.csproj"
+              "D:\\master\\SE\\RealEstates\\Domain\\Domain.csproj": {
+                "projectPath": "D:\\master\\SE\\RealEstates\\Domain\\Domain.csproj"
               },
-              "d:\\master\\SE\\RealEstates\\Persistence\\Persistence.csproj": {
-                "projectPath": "d:\\master\\SE\\RealEstates\\Persistence\\Persistence.csproj"
+              "D:\\master\\SE\\RealEstates\\Persistence\\Persistence.csproj": {
+                "projectPath": "D:\\master\\SE\\RealEstates\\Persistence\\Persistence.csproj"
               }
             }
           }
@@ -131,14 +131,14 @@
         }
       }
     },
-    "d:\\master\\SE\\RealEstates\\Domain\\Domain.csproj": {
+    "D:\\master\\SE\\RealEstates\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\master\\SE\\RealEstates\\Domain\\Domain.csproj",
+        "projectUniqueName": "D:\\master\\SE\\RealEstates\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "d:\\master\\SE\\RealEstates\\Domain\\Domain.csproj",
+        "projectPath": "D:\\master\\SE\\RealEstates\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\moham\\.nuget\\packages\\",
-        "outputPath": "d:\\master\\SE\\RealEstates\\Domain\\obj\\",
+        "outputPath": "D:\\master\\SE\\RealEstates\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -189,14 +189,14 @@
         }
       }
     },
-    "d:\\master\\SE\\RealEstates\\Persistence\\Persistence.csproj": {
+    "D:\\master\\SE\\RealEstates\\Persistence\\Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\master\\SE\\RealEstates\\Persistence\\Persistence.csproj",
+        "projectUniqueName": "D:\\master\\SE\\RealEstates\\Persistence\\Persistence.csproj",
         "projectName": "Persistence",
-        "projectPath": "d:\\master\\SE\\RealEstates\\Persistence\\Persistence.csproj",
+        "projectPath": "D:\\master\\SE\\RealEstates\\Persistence\\Persistence.csproj",
         "packagesPath": "C:\\Users\\moham\\.nuget\\packages\\",
-        "outputPath": "d:\\master\\SE\\RealEstates\\Persistence\\obj\\",
+        "outputPath": "D:\\master\\SE\\RealEstates\\Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -215,8 +215,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "d:\\master\\SE\\RealEstates\\Domain\\Domain.csproj": {
-                "projectPath": "d:\\master\\SE\\RealEstates\\Domain\\Domain.csproj"
+              "D:\\master\\SE\\RealEstates\\Domain\\Domain.csproj": {
+                "projectPath": "D:\\master\\SE\\RealEstates\\Domain\\Domain.csproj"
               }
             }
           }
@@ -231,6 +231,10 @@
         "netstandard2.0": {
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
               "target": "Package",
               "version": "[3.1.1, )"
             },
