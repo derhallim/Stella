@@ -1,0 +1,13 @@
+D:\master\SE\RealEstates\Application\bin\Debug\netstandard2.1\Application.deps.json
+D:\master\SE\RealEstates\Application\bin\Debug\netstandard2.1\Application.dll
+D:\master\SE\RealEstates\Application\bin\Debug\netstandard2.1\Application.pdb
+D:\master\SE\RealEstates\Application\bin\Debug\netstandard2.1\Domain.dll
+D:\master\SE\RealEstates\Application\bin\Debug\netstandard2.1\Persistence.dll
+D:\master\SE\RealEstates\Application\bin\Debug\netstandard2.1\Domain.pdb
+D:\master\SE\RealEstates\Application\bin\Debug\netstandard2.1\Persistence.pdb
+D:\master\SE\RealEstates\Application\obj\Debug\netstandard2.1\Application.csprojAssemblyReference.cache
+D:\master\SE\RealEstates\Application\obj\Debug\netstandard2.1\Application.AssemblyInfoInputs.cache
+D:\master\SE\RealEstates\Application\obj\Debug\netstandard2.1\Application.AssemblyInfo.cs
+D:\master\SE\RealEstates\Application\obj\Debug\netstandard2.1\Application.csproj.CopyComplete
+D:\master\SE\RealEstates\Application\obj\Debug\netstandard2.1\Application.dll
+D:\master\SE\RealEstates\Application\obj\Debug\netstandard2.1\Application.pdb

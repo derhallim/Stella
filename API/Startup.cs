@@ -11,6 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Persistence;
+using Microsoft.EntityFrameworkCore;
 
 namespace API
 {
@@ -26,7 +27,8 @@ namespace API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {   
-            
+            services.AddDbContext<DataContext>(options => options.UseSqlServer(
+                @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=StellaDB;Integrated Security=True"))  ;
             services.AddControllers();
         }
 
