@@ -11,3 +11,16 @@ D:\master\SE\RealEstates\Application\obj\Debug\netstandard2.1\Application.Assemb
 D:\master\SE\RealEstates\Application\obj\Debug\netstandard2.1\Application.csproj.CopyComplete
 D:\master\SE\RealEstates\Application\obj\Debug\netstandard2.1\Application.dll
 D:\master\SE\RealEstates\Application\obj\Debug\netstandard2.1\Application.pdb
+C:\github\Stella\Application\bin\Debug\netstandard2.1\Application.deps.json
+C:\github\Stella\Application\bin\Debug\netstandard2.1\Application.dll
+C:\github\Stella\Application\bin\Debug\netstandard2.1\Application.pdb
+C:\github\Stella\Application\bin\Debug\netstandard2.1\Domain.dll
+C:\github\Stella\Application\bin\Debug\netstandard2.1\Persistence.dll
+C:\github\Stella\Application\bin\Debug\netstandard2.1\Domain.pdb
+C:\github\Stella\Application\bin\Debug\netstandard2.1\Persistence.pdb
+C:\github\Stella\Application\obj\Debug\netstandard2.1\Application.csprojAssemblyReference.cache
+C:\github\Stella\Application\obj\Debug\netstandard2.1\Application.AssemblyInfoInputs.cache
+C:\github\Stella\Application\obj\Debug\netstandard2.1\Application.AssemblyInfo.cs
+C:\github\Stella\Application\obj\Debug\netstandard2.1\Application.csproj.CopyComplete
+C:\github\Stella\Application\obj\Debug\netstandard2.1\Application.dll
+C:\github\Stella\Application\obj\Debug\netstandard2.1\Application.pdb
