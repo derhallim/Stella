@@ -17,16 +17,16 @@ namespace Persistence
 
 
         protected override void OnModelCreating(ModelBuilder builder){
-            builder.Entity<City>().HasData(
-                new City{ Id =1, Name = "Montreal" }, 
-                new City { Id = 2, Name = "Vancouver"}, 
-                new City { Id = 3, Name = "Calgary"}
-            );
+            // builder.Entity<City>().HasData(
+            //     new City{ Id = new Guid(), Name = "Montreal" }, 
+            //     new City { Id = new Guid(), Name = "Vancouver"}, 
+            //     new City { Id = new Guid(), Name = "Calgary"}
+            // );
 
-            builder.Entity<OfferType>().HasData(
-                new OfferType{ Id=1, OfferName="Rent"}, 
-                new OfferType{ Id=2, OfferName="Sale"}
-            );
+            // builder.Entity<OfferType>().HasData(
+            //     new OfferType{ Id=new Guid(), OfferName="Rent"}, 
+            //     new OfferType{ Id=new Guid(), OfferName="Sale"}
+            // );
         }
       
     }

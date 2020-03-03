@@ -19,9 +19,10 @@ namespace API
             var host = CreateHostBuilder(args).Build();
             using(var scope = host.Services.CreateScope()){
                 var services = scope.ServiceProvider;
-                try{
+                try{ 
                     var context = services.GetRequiredService<DataContext>();
                     context.Database.Migrate();
+                    Seed.SeedData(context);
                 }
                 catch(Exception ex){
                     var logger = services.GetRequiredService<ILogger<Program>>();

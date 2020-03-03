@@ -1,8 +1,10 @@
+using System;
+
 namespace Domain
 {
     public class OfferType
     {
-        public int Id { get; set; }
+        public Guid Id { get; set; }
 
         public string OfferName { get; set; }
     }

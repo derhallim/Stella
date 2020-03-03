@@ -54,3 +54,5 @@ D:\master\SE\RealEstates\API\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni
 D:\master\SE\RealEstates\API\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 D:\master\SE\RealEstates\API\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 D:\master\SE\RealEstates\API\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\Master\SE\RealEstates\API\bin\Debug\netcoreapp3.1\MediatR.dll
+D:\Master\SE\RealEstates\API\bin\Debug\netcoreapp3.1\MediatR.Extensions.Microsoft.DependencyInjection.dll
