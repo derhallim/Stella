@@ -29,10 +29,9 @@ namespace API.Controllers
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<Apartment>> Get(int id)
+        public async Task<ActionResult<Apartment>> Details(Guid id)
         {
-            var apartment = await _context.Apartments.FindAsync(id);
-            return Ok(apartment);
+           return await _mediator.Send(new Details.Query{Id= id});
         }
 
       
