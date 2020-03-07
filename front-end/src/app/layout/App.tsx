@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { NavBar } from "../../features/nav/NavBar";
 import { Container } from "semantic-ui-react";
 import { Route } from "react-router-dom";
@@ -10,11 +10,12 @@ import ApartmentsStore from '../stores/apartmentsStore'
 
 function App() {
 
+ 
+
   const apartmentsStore = useContext(ApartmentsStore)
   return (
     <>
       <NavBar />
-      <h1>{apartmentsStore.title}</h1>
       <Container style={{marginTop: '10em'}}>
         <Route path='/' exact component={HomePage }></Route>
         {/* <Route path='/apartments' component={Apartments}></Route> */}

@@ -1,12 +1,10 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using Application.Apartments;
 using Domain;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using Persistence;
 
 namespace API.Controllers
@@ -31,21 +29,20 @@ namespace API.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<Apartment>> Details(Guid id)
         {
-           return await _mediator.Send(new Details.Query{Id= id});
+            return await _mediator.Send(new Details.Query { Id = id });
         }
 
-      
-
         [HttpPut("{id}")]
-        public async Task<ActionResult<Unit>> Edit(Guid id, Edit.Command command){
+        public async Task<ActionResult<Unit>> Edit(Guid id, Edit.Command command)
+        {
             command.Id = id;
             return await _mediator.Send(command);
         }
 
         [HttpDelete("{id}")]
-
-        public async Task<ActionResult<Unit>> Delete(Guid id){
-                return await _mediator.Send(new Delete.Command{id = id});
+        public async Task<ActionResult<Unit>> Delete(Guid id)
+        {
+            return await _mediator.Send(new Delete.Command { id = id });
         }
     }
 }

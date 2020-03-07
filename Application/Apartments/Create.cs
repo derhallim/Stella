@@ -7,7 +7,5 @@ namespace Application.Apartments
         public class Command: IRequest{
 
         }
-
-        
     }
 }

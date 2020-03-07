@@ -32,7 +32,7 @@ namespace API
             services.AddDbContext<DataContext>(options => options.UseSqlServer(
                 @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=StellaDB;Integrated Security=True")) ;
             services.AddCors(opt => opt.AddPolicy("CorsPolicy", policy => {
-                policy.AllowAnyHeader().AllowAnyMethod().WithOrigins("http://localhost:3000");
+                policy.AllowAnyHeader().AllowAnyMethod().WithOrigins("http://localhost:3000/apartments");
             }));
             services.AddMediatR(typeof(List.Handler).Assembly);
             services.AddControllers();
@@ -45,6 +45,7 @@ namespace API
             {
                 app.UseDeveloperExceptionPage();
             }
+            app.UseCors("CorsPolicy");
 
             app.UseHttpsRedirection();
 
@@ -52,7 +53,6 @@ namespace API
 
             app.UseAuthorization();
 
-            app.UseCors("CorsPolicy");
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
