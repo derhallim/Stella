@@ -17,7 +17,7 @@ function App() {
     <>
       <NavBar />
       <Container style={{marginTop: '10em'}}>
-        <Route path='/' exact component={HomePage }></Route>
+        <Route path='/' exact component={AllApartments }></Route>
         {/* <Route path='/apartments' component={Apartments}></Route> */}
         <Route path='/createApartment' component={AprtmentForm} ></Route>
         <Route path='/cms' component={CMSHome} ></Route>
