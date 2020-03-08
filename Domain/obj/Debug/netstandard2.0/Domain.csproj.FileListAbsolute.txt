@@ -1,8 +1,0 @@
-D:\Master\SE\RealEstates\Domain\bin\Debug\netstandard2.0\Domain.deps.json
-D:\Master\SE\RealEstates\Domain\bin\Debug\netstandard2.0\Domain.dll
-D:\Master\SE\RealEstates\Domain\bin\Debug\netstandard2.0\Domain.pdb
-D:\Master\SE\RealEstates\Domain\obj\Debug\netstandard2.0\Domain.csprojAssemblyReference.cache
-D:\Master\SE\RealEstates\Domain\obj\Debug\netstandard2.0\Domain.AssemblyInfoInputs.cache
-D:\Master\SE\RealEstates\Domain\obj\Debug\netstandard2.0\Domain.AssemblyInfo.cs
-D:\Master\SE\RealEstates\Domain\obj\Debug\netstandard2.0\Domain.dll
-D:\Master\SE\RealEstates\Domain\obj\Debug\netstandard2.0\Domain.pdb
