@@ -25,7 +25,7 @@ namespace API
             services.AddDbContext<DataContext>(options => options.UseSqlServer(
                 @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=StellaDB;Integrated Security=True"));
 
-            services.AddCors(opt => opt.AddPolicy(MyAllowSpecificOrigins, builder => 
+            services.AddCors(opt => opt.AddPolicy(MyAllowSpecificOrigins, builder =>
             {
                 builder.AllowAnyHeader().AllowAnyMethod().WithOrigins("http://localhost:3000").SetIsOriginAllowedToAllowWildcardSubdomains();
             }));
