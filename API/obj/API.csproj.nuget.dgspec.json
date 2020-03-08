@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\github\\Stella\\API\\API.csproj": {}
+    "D:\\Master\\SE\\RealEstates\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\github\\Stella\\API\\API.csproj": {
+    "D:\\Master\\SE\\RealEstates\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\github\\Stella\\API\\API.csproj",
+        "projectUniqueName": "D:\\Master\\SE\\RealEstates\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\github\\Stella\\API\\API.csproj",
-        "packagesPath": "C:\\Users\\mderhalli\\.nuget\\packages\\",
-        "outputPath": "C:\\github\\Stella\\API\\obj\\",
+        "projectPath": "D:\\Master\\SE\\RealEstates\\API\\API.csproj",
+        "packagesPath": "C:\\Users\\moham\\.nuget\\packages\\",
+        "outputPath": "D:\\Master\\SE\\RealEstates\\API\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\mderhalli\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\moham\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -27,8 +30,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\github\\Stella\\Application\\Application.csproj": {
-                "projectPath": "C:\\github\\Stella\\Application\\Application.csproj"
+              "D:\\Master\\SE\\RealEstates\\Application\\Application.csproj": {
+                "projectPath": "D:\\Master\\SE\\RealEstates\\Application\\Application.csproj"
               }
             }
           }
@@ -59,21 +62,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\github\\Stella\\Application\\Application.csproj": {
+    "D:\\Master\\SE\\RealEstates\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\github\\Stella\\Application\\Application.csproj",
+        "projectUniqueName": "D:\\Master\\SE\\RealEstates\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "C:\\github\\Stella\\Application\\Application.csproj",
-        "packagesPath": "C:\\Users\\mderhalli\\.nuget\\packages\\",
-        "outputPath": "C:\\github\\Stella\\Application\\obj\\",
+        "projectPath": "D:\\Master\\SE\\RealEstates\\Application\\Application.csproj",
+        "packagesPath": "C:\\Users\\moham\\.nuget\\packages\\",
+        "outputPath": "D:\\Master\\SE\\RealEstates\\Application\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\mderhalli\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\moham\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -86,11 +92,11 @@
         "frameworks": {
           "netstandard2.1": {
             "projectReferences": {
-              "C:\\github\\Stella\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\github\\Stella\\Domain\\Domain.csproj"
+              "D:\\Master\\SE\\RealEstates\\Domain\\Domain.csproj": {
+                "projectPath": "D:\\Master\\SE\\RealEstates\\Domain\\Domain.csproj"
               },
-              "C:\\github\\Stella\\Persistence\\Persistence.csproj": {
-                "projectPath": "C:\\github\\Stella\\Persistence\\Persistence.csproj"
+              "D:\\Master\\SE\\RealEstates\\Persistence\\Persistence.csproj": {
+                "projectPath": "D:\\Master\\SE\\RealEstates\\Persistence\\Persistence.csproj"
               }
             }
           }
@@ -124,21 +130,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\github\\Stella\\Domain\\Domain.csproj": {
+    "D:\\Master\\SE\\RealEstates\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\github\\Stella\\Domain\\Domain.csproj",
+        "projectUniqueName": "D:\\Master\\SE\\RealEstates\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\github\\Stella\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\mderhalli\\.nuget\\packages\\",
-        "outputPath": "C:\\github\\Stella\\Domain\\obj\\",
+        "projectPath": "D:\\Master\\SE\\RealEstates\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\moham\\.nuget\\packages\\",
+        "outputPath": "D:\\Master\\SE\\RealEstates\\Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\mderhalli\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\moham\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -176,21 +185,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\github\\Stella\\Persistence\\Persistence.csproj": {
+    "D:\\Master\\SE\\RealEstates\\Persistence\\Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\github\\Stella\\Persistence\\Persistence.csproj",
+        "projectUniqueName": "D:\\Master\\SE\\RealEstates\\Persistence\\Persistence.csproj",
         "projectName": "Persistence",
-        "projectPath": "C:\\github\\Stella\\Persistence\\Persistence.csproj",
-        "packagesPath": "C:\\Users\\mderhalli\\.nuget\\packages\\",
-        "outputPath": "C:\\github\\Stella\\Persistence\\obj\\",
+        "projectPath": "D:\\Master\\SE\\RealEstates\\Persistence\\Persistence.csproj",
+        "packagesPath": "C:\\Users\\moham\\.nuget\\packages\\",
+        "outputPath": "D:\\Master\\SE\\RealEstates\\Persistence\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\mderhalli\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\moham\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -203,8 +215,8 @@
         "frameworks": {
           "netstandard2.1": {
             "projectReferences": {
-              "C:\\github\\Stella\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\github\\Stella\\Domain\\Domain.csproj"
+              "D:\\Master\\SE\\RealEstates\\Domain\\Domain.csproj": {
+                "projectPath": "D:\\Master\\SE\\RealEstates\\Domain\\Domain.csproj"
               }
             }
           }
@@ -246,7 +258,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

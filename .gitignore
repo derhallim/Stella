@@ -36,3 +36,12 @@ msbuild.wrn
 # Visual Studio 2015
 .vs/
 **/bin
+
+/API/bin
+/API/obj
+/Application/bin
+/Application/obj
+/Domain/bin
+/Domain/obj
+/Persistence/bin
+/Persistence/obj
