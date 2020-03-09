@@ -8,7 +8,7 @@ import CMSHome from "../../features/cms/CMSHome";
 import ApartmentsList from "../../features/apartments/ApartmentsList";
 import ApartmentsStore from '../stores/apartmentsStore'
 import ApartmentDetails from "../../features/apartments/ApartmentDetails";
-import IMSHome from "../../features/ims/IMSHome";
+import IMS from "../../features/ims/IMS";
 
 function App() {
   const apartmentsStore = useContext(ApartmentsStore)
@@ -20,7 +20,7 @@ function App() {
         <Route path='/apartments/:id'  component={ApartmentDetails} ></Route>
         <Route path='/createApartment' component={AprtmentForm} ></Route>
         <Route path='/cms' component={CMSHome} ></Route>
-        <Route path='/ims' component={IMSHome} ></Route>
+        <Route path='/ims' component={IMS} ></Route>
         <Route path='/apartments' component={ApartmentsList} ></Route>
       </Container>
     </>
