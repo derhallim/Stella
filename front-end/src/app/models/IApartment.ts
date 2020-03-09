@@ -1,5 +1,5 @@
 export default interface IApartment{
-    id: number; 
+    id: string; 
     description: string; 
     numOfRooms: number; 
     numOfBathrooms: number; 

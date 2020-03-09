@@ -24,11 +24,15 @@ namespace API
         {
             services.AddDbContext<DataContext>(options => options.UseSqlServer(
                 @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=StellaDB;Integrated Security=True"));
-
-            services.AddCors(opt => opt.AddPolicy(MyAllowSpecificOrigins, builder =>
+             services.AddCors(options =>
             {
-                builder.AllowAnyHeader().AllowAnyMethod().WithOrigins("http://localhost:3000").SetIsOriginAllowedToAllowWildcardSubdomains();
-            }));
+                options.AddPolicy(MyAllowSpecificOrigins,
+                builder =>
+                {
+                    // Not a permanent solution, but just trying to isolate the problem
+                    builder.AllowAnyMethod().AllowAnyHeader().WithOrigins("http://localhost:3000");
+                });
+            });
             services.AddMediatR(typeof(List.Handler).Assembly);
             services.AddControllers();
         }
@@ -41,13 +45,10 @@ namespace API
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseHttpsRedirection();
-
+            // app.UseHttpsRedirection();
             app.UseRouting();
-            app.UseCors("CorsPolicy");
-
+            app.UseCors(MyAllowSpecificOrigins);
             app.UseAuthorization();
-
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();

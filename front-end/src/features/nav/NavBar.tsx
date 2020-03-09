@@ -12,6 +12,8 @@ export const NavBar = () => {
       </Menu.Item>
       <Menu.Item name="apartments" as={NavLink} to='/apartments'>Apartments</Menu.Item>
       <Menu.Item name="cms" as={NavLink} to='/cms'>CMS</Menu.Item>
+      <Menu.Item name="create-apartment" as={NavLink} to='/createapartment'>Create Apartment</Menu.Item>
+
       <Menu.Item name="sign-in" position='right' ><Button positive content='Sign in'/></Menu.Item>
       </Container>
     </Menu>

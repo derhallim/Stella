@@ -26,6 +26,8 @@ namespace API.Controllers
             return await _mediator.Send(new List.Query());
         }
 
+        
+
         [HttpGet("{id}")]
         public async Task<ActionResult<Apartment>> Details(Guid id)
         {

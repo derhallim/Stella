@@ -4,8 +4,6 @@ import IApartment from '../models/IApartment';
 axios.defaults.baseURL = 'http://localhost:5000/api';
 
 const responseBody = (response :AxiosResponse) => response.data;
-
-
 const requests = {
     get: (url: string) => axios.get(url).then(responseBody), 
     post: (url: string, body: {}) => axios.post(url, body).then(responseBody), 
@@ -22,6 +20,16 @@ const Apartments = {
 }
 
 
+const Images = {
+    list: () : Promise<IApartment[]> => requests.get('/apartments'), 
+    details: (id: string) => requests.get(`/apartments/${id}`), 
+    create: (base64String: string, fileName: string) => requests.post('/Images',{ base64String, fileName} ), 
+    update: (apartment: IApartment) => requests.put(`/apartments/${apartment.id}`, apartment), 
+    delete: (id: string) => requests.delete(`/apartments/${id}`)
+}
+
+
 export default {
-    Apartments
+    Apartments, 
+    Images
 }
