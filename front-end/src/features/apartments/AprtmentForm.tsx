@@ -3,21 +3,22 @@ import { Container } from "semantic-ui-react";
 import agent from "../../app/api/agent";
 
 const AprtmentForm = () => {
-
   const fileUploadHandler = (files: any) => {
-    console.log(files[0])
-    var reader : FileReader = new FileReader(); 
-    
-    reader.onload = function(event){
-      var contents = event.target?.result
-      console.log(contents!.toString())
+    console.log(files[0]);
+    var reader: FileReader = new FileReader();
 
-       agent.Images.create(contents!.toString(), 'test');
-    }
+    reader.onload = function(event) {
+      var contents = event.target?.result;
+      console.log(contents!.toString());
+      contents = contents!.toString();
+      agent.Images.create(
+        contents.substring(contents.indexOf(",") + 1),
+        "test"
+      );
+    };
 
-    var s = reader.readAsDataURL(files[0])
-  }
-
+    var s = reader.readAsDataURL(files[0]);
+  };
 
   return (
     <Container style={{ marginTop: "10em" }}>
@@ -26,7 +27,12 @@ const AprtmentForm = () => {
           <i className="file icon"></i>
           Open File
         </label>
-        <input type="file" id="file" style={{ display: "none" }} onChange={e => fileUploadHandler(e.target.files)}/>
+        <input
+          type="file"
+          id="file"
+          style={{ display: "none" }}
+          onChange={e => fileUploadHandler(e.target.files)}
+        />
       </div>
     </Container>
   );

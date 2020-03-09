@@ -7,7 +7,6 @@ using Domain;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Persistence;
-using Azure.Storage.Blobs.Models;
 using System.IO;
 
 namespace API.Controllers
@@ -40,8 +39,6 @@ namespace API.Controllers
             uploadFileStream.Close();
         }
 
-        
-
         [HttpGet("{id}")]
         public async Task<ActionResult<Apartment>> Details(Guid id)
         {
@@ -62,7 +59,7 @@ namespace API.Controllers
         }
 
         [HttpPost]
-        public async Task Add([FromForm] iImage Image ){
+        public async Task Add([FromBody] Image Image){
         
             // string localPath = "./data/";
             // string fileName = "quickstart" + Guid.NewGuid().ToString() + ".txt";
@@ -70,26 +67,22 @@ namespace API.Controllers
             // await System.IO.File.WriteAllTextAsync(localFilePath, "Hello, World!");
             // Console.WriteLine("Uploading to Blob storage as blob:\n\t {0}\n", blobClient.Uri);
             // using FileStream uploadFileStream = System.IO.File.OpenRead(localFilePath);
-         
-         
             string connectionString = "DefaultEndpointsProtocol=https;AccountName=stellaprojectstorage;AccountKey=/19q4Pus/z1kq6jU4tgFKC0VM9yOZ9ZEY34sFZ9Zr/rLZ3eHFHYjj8YBnJr5YhP03sEzAdG53QoMvBG8/u+Qug==;EndpointSuffix=core.windows.net";
             BlobServiceClient blobServiceClient = new BlobServiceClient(connectionString);
             BlobContainerClient containerClient =  blobServiceClient.GetBlobContainerClient("stellacontainer");
-            BlobClient blobClient = containerClient.GetBlobClient(iImage.fileName);
+            BlobClient blobClient = containerClient.GetBlobClient(Image.filename);
             
             //Convert Base64 Encoded string to Byte Array.
-            byte[] imageBytes = Convert.FromBase64String(iImage.base64String);
+            byte[] imageBytes = Convert.FromBase64String(Image.base64string);
             System.IO.Stream stream = new System.IO.MemoryStream(imageBytes);
-
 
             await blobClient.UploadAsync(stream, true);
             // uploadFileStream.Close();
         }
     }
 
-
-    public interface iImage{
-       static string base64String { set; get;}
-        static string fileName {set; get;}
+    public class Image{
+         public string base64string { set; get;}
+         public  string filename { set; get;}
     }
 }

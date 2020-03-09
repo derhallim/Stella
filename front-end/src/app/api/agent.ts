@@ -23,7 +23,7 @@ const Apartments = {
 const Images = {
     list: () : Promise<IApartment[]> => requests.get('/apartments'), 
     details: (id: string) => requests.get(`/apartments/${id}`), 
-    create: (base64String: string, fileName: string) => requests.post('/Images',{ base64String, fileName} ), 
+    create: (base64string: string, filename: string) => requests.post('/Images',{  base64string, filename} ), 
     update: (apartment: IApartment) => requests.put(`/apartments/${apartment.id}`, apartment), 
     delete: (id: string) => requests.delete(`/apartments/${id}`)
 }
