@@ -3,7 +3,7 @@ import React from 'react'
  const IMSHome = () => {
     return (
         <div>
-            Welcome to IMS home
+            Use the options on the left navigation to check list of companies we're dealing with.
         </div>
     )
 }

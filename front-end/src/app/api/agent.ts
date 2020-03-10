@@ -1,5 +1,6 @@
 import axios, { AxiosResponse } from 'axios';
 import IApartment from '../models/IApartment';
+import  IAgency  from '../models/IAgency';
 
 axios.defaults.baseURL = 'http://localhost:5000/api';
 
@@ -28,8 +29,16 @@ const Images = {
     delete: (id: string) => requests.delete(`/apartments/${id}`)
 }
 
+const Agencies = {
+    list: (agencyType: string) : Promise<IAgency[]> => requests.get('/agencies'), 
+    details: (id: string) : Promise<IAgency> => requests.get(`/agencies/${id}`), 
+    create: (agency: IAgency) => requests.post('/agencies',agency ), 
+    update: (agency: IAgency) => requests.put(`/agencies/${agency.id}`, agency), 
+    delete: (id: string) => requests.delete(`/agencies/${id}`)
+}
 
 export default {
     Apartments, 
-    Images
+    Images, 
+    Agencies
 }

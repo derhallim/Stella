@@ -49,7 +49,7 @@ namespace Persistence
 
             }
 
-                if(!context.OfferTypes.Any()){
+            if(!context.OfferTypes.Any()){
                 var offers = new List<OfferType>{
                     new OfferType{
                         OfferName= "Rent"
@@ -62,6 +62,75 @@ namespace Persistence
 
             }
 
+            if(!context.Agencies.Any()){
+                var agencies = new List<Agency> {
+                    new Agency{
+                        Email = "Elevator@ev1.com", 
+                        IsActive = true, 
+                        Name = "Electricians Specialists Group", 
+                        PricePerHour = 50, 
+                        Telephone = "514-493-2321", 
+                        AgencyType="Electricians"
+                    }, 
+                    new Agency{
+                        Email = "Elevator@ev2.com", 
+                        IsActive = false, 
+                        Name = "Montreal Plbumbers Inc. ", 
+                        PricePerHour = 70, 
+                        Telephone = "514-343-3432", 
+                        AgencyType = "Plumbing"
+                    }, 
+                       new Agency{
+                        Email = "Elevator@ev2.com", 
+                        IsActive = false, 
+                        Name = "Montreal Elevators Inc. ", 
+                        PricePerHour = 70, 
+                        Telephone = "514-343-3432", 
+                        AgencyType = "Elevators"
+                    }, 
+                       new Agency{
+                        Email = "Elevator@ev2.com", 
+                        IsActive = false, 
+                        Name = "Montreal Cleaners Inc. ", 
+                        PricePerHour = 70, 
+                        Telephone = "514-343-3432", 
+                        AgencyType = "Cleaning"
+                    }, 
+                       new Agency{
+                        Email = "Elevator@ev2.com", 
+                        IsActive = false, 
+                        Name = "Plumbing LTD. ", 
+                        PricePerHour = 70, 
+                        Telephone = "514-343-3432", 
+                        AgencyType = "Plumbing"
+                    }, 
+                       new Agency{
+                        Email = "Elevator@ev2.com", 
+                        IsActive = false, 
+                        Name = "Montreal Renovation Inc. ", 
+                        PricePerHour = 70, 
+                        Telephone = "514-343-3432", 
+                        AgencyType = "Renovation"
+                    }, 
+                       new Agency{
+                        Email = "Elevator@ev2.com", 
+                        IsActive = false, 
+                        Name = "Renovators LTD. ", 
+                        PricePerHour = 70, 
+                        Telephone = "514-343-3432", 
+                        AgencyType = "Renovation"
+                    }, 
+                       new Agency{
+                        Email = "Elevator@ev2.com", 
+                        IsActive = false, 
+                        Name = "Super Clean Inc.", 
+                        PricePerHour = 70, 
+                        Telephone = "514-343-3432", 
+                        AgencyType = "Cleaning"
+                    }
+                };
+                context.Agencies.AddRange(agencies);
+            }
 
                 context.SaveChanges();
 

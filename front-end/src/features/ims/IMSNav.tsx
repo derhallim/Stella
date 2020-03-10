@@ -2,32 +2,36 @@ import React from "react";
 import { Menu, Icon, Container } from "semantic-ui-react";
 import { NavLink } from "react-router-dom";
 
-export const IMSNav = () => {
+export interface IMSNavProps{
+  navOnClick: (agencyType: string) => void; 
+}
+
+export const IMSNav = (props: IMSNavProps) => {
   return (
     <Menu compact icon="labeled" vertical>
-      <Menu.Item name="gamepad"  as={NavLink} to='/ims/' exact>
+      <Menu.Item name="home"  as={NavLink} to='/ims/' exact onClick={()  => props.navOnClick('')}>
         <Icon name="home" />
         IMS Home
       </Menu.Item>
-      <Menu.Item name="video camera" as={NavLink} to='/ims/elevators'>
+      <Menu.Item name="elevators" as={NavLink} to='/ims/elevators' onClick={()  => props.navOnClick('Elevators')}>
         <Icon name="hand pointer outline" />
         Elevator Maintenance
       </Menu.Item>
-      <Menu.Item name="video play"  as={NavLink} to='/ims/plumbing'>
+      <Menu.Item name="plumbing"  as={NavLink} to='/ims/plumbing' onClick={()  => props.navOnClick('Plumbing')}>
         <Icon name="theme" />
-        Plumping Agency
+        Plumbing Agency
       </Menu.Item>
-      <Menu.Item name="video play"  as={NavLink} to='/ims/renovation'>
+      <Menu.Item name="renovation"  as={NavLink} to='/ims/renovation' onClick={()  => props.navOnClick('Renovation')}>
         <Icon name="recycle" />
         Renovation Agency
       </Menu.Item>
-      <Menu.Item name="video play"  as={NavLink} to='/ims/cleaning'>
+      <Menu.Item name="cleaning"  as={NavLink} to='/ims/cleaning' onClick={()  => props.navOnClick('Cleaning')}>
         <Icon name="trash alternate" />
         Cleaning Agency
       </Menu.Item>
-      <Menu.Item name="video play"  as={NavLink} to='/ims/electricians'>
+      <Menu.Item name="electricians"  as={NavLink} to='/ims/electricians' onClick={()  => props.navOnClick('Electricians')}>
         <Icon name="lightbulb outline" />
-        Electrians
+        Electricians
       </Menu.Item>
     </Menu>
   );

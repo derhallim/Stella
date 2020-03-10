@@ -17,7 +17,6 @@ namespace API.Controllers
             _context = context;
         }
 
-
         [HttpGet]
         public async Task<ActionResult<IEnumerable<City>>> Get(){
             var cities = await _context.Cities.ToListAsync();
@@ -25,7 +24,6 @@ namespace API.Controllers
         }
 
         [HttpGet("{id}")]
-
         public async Task<ActionResult<City>> GetAction(int id){
             var city = await _context.Cities.FindAsync(id);
             return Ok(city);
