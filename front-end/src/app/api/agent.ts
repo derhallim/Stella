@@ -30,7 +30,7 @@ const Images = {
 }
 
 const Agencies = {
-    list: (agencyType: string) : Promise<IAgency[]> => requests.get('/agencies'), 
+    list: (agencyType: string) : Promise<IAgency[]> => requests.get(`/agencies?AgencyType=${agencyType}`), 
     details: (id: string) : Promise<IAgency> => requests.get(`/agencies/${id}`), 
     create: (agency: IAgency) => requests.post('/agencies',agency ), 
     update: (agency: IAgency) => requests.put(`/agencies/${agency.id}`, agency), 

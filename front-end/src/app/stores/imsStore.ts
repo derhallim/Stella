@@ -11,12 +11,20 @@ class IMSStore {
   @observable submitting = false;
   @observable agencyType: string = "";
 
-  @action loadAgencies = async () => {
+  @action loadAgencies = async (agencyType: string) => {
+    // this.agencies = [];
+    // try {
+    //   const agencies = await agent.Agencies.list(agencyType);
+    //   agencies.forEach(agency => {
+    //     this.agencies.push(agency);
+    //   });
+    // } catch (err) {
+    //   console.log(err);
+    // } finally {
+    // }
+
     try {
-      const agencies = await agent.Agencies.list(this.agencyType);
-      agencies.forEach(agency => {
-        this.agencies.push(agency);
-      });
+      this.agencies = await agent.Agencies.list(agencyType);
     } catch (err) {
       console.log(err);
     } finally {
@@ -24,8 +32,8 @@ class IMSStore {
   };
 
   @action setAgency = (agencyName: string) => {
-      this.agencyType = agencyName;
-  }
+    this.agencyType = agencyName;
+  };
 }
 
 export default createContext(new IMSStore());

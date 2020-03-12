@@ -13,7 +13,6 @@ namespace Domain
         public bool IsAvailable { get; set; }
 
         public string City { get; set; }
-
         public string FullAddress { get; set; }
 
     }

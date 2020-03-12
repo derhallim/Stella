@@ -13,23 +13,23 @@ export const IMSNav = (props: IMSNavProps) => {
         <Icon name="home" />
         IMS Home
       </Menu.Item>
-      <Menu.Item name="elevators" as={NavLink} to='/ims/elevators' onClick={()  => props.navOnClick('Elevators')}>
+      <Menu.Item name="elevators" as={NavLink} to='/ims/agencies/elevators' onClick={()  => props.navOnClick('Elevators')}>
         <Icon name="hand pointer outline" />
         Elevator Maintenance
       </Menu.Item>
-      <Menu.Item name="plumbing"  as={NavLink} to='/ims/plumbing' onClick={()  => props.navOnClick('Plumbing')}>
+      <Menu.Item name="plumbing"  as={NavLink} to='/ims/agencies/plumbing' onClick={()  => props.navOnClick('Plumbing')}>
         <Icon name="theme" />
         Plumbing Agency
       </Menu.Item>
-      <Menu.Item name="renovation"  as={NavLink} to='/ims/renovation' onClick={()  => props.navOnClick('Renovation')}>
+      <Menu.Item name="renovation"  as={NavLink} to='/ims/agencies/renovation' onClick={()  => props.navOnClick('Renovation')}>
         <Icon name="recycle" />
         Renovation Agency
       </Menu.Item>
-      <Menu.Item name="cleaning"  as={NavLink} to='/ims/cleaning' onClick={()  => props.navOnClick('Cleaning')}>
+      <Menu.Item name="cleaning"  as={NavLink} to='/ims/agencies/cleaning' onClick={()  => props.navOnClick('Cleaning')}>
         <Icon name="trash alternate" />
         Cleaning Agency
       </Menu.Item>
-      <Menu.Item name="electricians"  as={NavLink} to='/ims/electricians' onClick={()  => props.navOnClick('Electricians')}>
+      <Menu.Item name="electricians"  as={NavLink} to='/ims/agencies/electricians' onClick={()  => props.navOnClick('Electricians')}>
         <Icon name="lightbulb outline" />
         Electricians
       </Menu.Item>

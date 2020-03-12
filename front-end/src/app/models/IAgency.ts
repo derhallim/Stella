@@ -1,4 +1,4 @@
-export default interface IAgency{
+export default interface IAgency {
     id: string; 
     name: string; 
     telephone: string; 
