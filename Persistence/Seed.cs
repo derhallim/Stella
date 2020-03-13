@@ -11,23 +11,25 @@ namespace Persistence
                 var apartments = new List<Apartment>{
                     new Apartment{
                         City = "Montreal", 
-                        Description = "Fancy 4 1/2 apartment in downtown!", 
+                        Description = "Welcome to this ad, this apartment is really big with fancy view on Montreal downtown, please call us at: 514-222-2222 to know more", 
                         FullAddress = "3455 durocher street, h2x 2c9", 
                         IsAvailable = true, 
                         NumOfBathrooms = 1, 
                         NumOfRooms = 2, 
                         OfferType = "Rent", 
-                        Price  = 1000
+                        Price  = 1000, 
+                        Title = "Apartment 5 1/2 in Downtown Montreal"
                     }, 
                     new Apartment{
                         City = "Montreal", 
-                        Description = "Studio for rent!", 
+                        Description = "Cozy studio for rent, all included in a great spot in Montreal, call 514-222-2222 for more info.", 
                         FullAddress = "2050 de maisonneuve ouest, h3h 1k7", 
                         IsAvailable = true, 
                         NumOfBathrooms = 1, 
                         NumOfRooms = 1, 
                         OfferType = "Rent", 
-                        Price  = 750
+                        Price  = 750, 
+                        Title= "Small Studio for rent in Montreal."
                     }
                 };
                 context.Apartments.AddRange(apartments);

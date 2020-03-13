@@ -4,7 +4,7 @@ import { Container } from 'semantic-ui-react'
 const CMSHome = () => {
     return (
         <Container>
-            This is cms home
+           Welcome to CMS Home
         </Container>
     )
 }

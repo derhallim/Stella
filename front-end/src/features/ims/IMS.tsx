@@ -9,17 +9,13 @@ import IMSHome from './IMSHome'
 const IMS = () => {
   const imsStore = useContext(IMSStore);
 
-  const onNavClick = (agencyType: string) => {
-    // imsStore.setAgency(agencyType);
-    // imsStore.loadAgencies();
-  };
-
+ 
   return (
     <Container>
       <Grid>
         <Grid.Row>
           <Grid.Column width={4}>
-            <IMSNav navOnClick={onNavClick} />
+            <IMSNav  />
           </Grid.Column>
           <Grid.Column width={12}>
             <Route path="/ims/" exact component={IMSHome} />

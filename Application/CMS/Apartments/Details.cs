@@ -5,7 +5,7 @@ using Domain;
 using MediatR;
 using Persistence;
 
-namespace Application.Apartments
+namespace Application.CMS.Apartments
 {
     public class Details
     {

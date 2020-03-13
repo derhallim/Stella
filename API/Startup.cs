@@ -6,7 +6,7 @@ using Microsoft.Extensions.Hosting;
 using Persistence;
 using Microsoft.EntityFrameworkCore;
 using MediatR;
-using Application.Apartments;
+using Application.CMS.Apartments;
 
 namespace API
 {

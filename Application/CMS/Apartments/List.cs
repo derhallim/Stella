@@ -6,14 +6,12 @@ using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Persistence;
 
-namespace Application.Apartments
+namespace Application.CMS.Apartments
 {
     public class List
     {
         public class Query : IRequest<List<Apartment>>
         {
-
-
         }
 
         public class Handler : IRequestHandler<Query, List<Apartment>>
@@ -22,7 +20,6 @@ namespace Application.Apartments
             public Handler(DataContext context)
             {
                 _context = context;
-
             }
 
             public async Task<List<Apartment>> Handle(Query request, CancellationToken cancellationToken)

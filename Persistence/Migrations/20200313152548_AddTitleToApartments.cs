@@ -3,10 +3,15 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Persistence.Migrations
 {
-    public partial class AddAgencies : Migration
+    public partial class AddTitleToApartments : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.AddColumn<string>(
+                name: "Title",
+                table: "Apartments",
+                nullable: true);
+
             migrationBuilder.CreateTable(
                 name: "Agencies",
                 columns: table => new
@@ -29,6 +34,10 @@ namespace Persistence.Migrations
         {
             migrationBuilder.DropTable(
                 name: "Agencies");
+
+            migrationBuilder.DropColumn(
+                name: "Title",
+                table: "Apartments");
         }
     }
 }

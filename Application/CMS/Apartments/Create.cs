@@ -1,6 +1,6 @@
 using MediatR;
 
-namespace Application.Apartments
+namespace Application.CMS.Apartments
 {
     public class Create
     {

@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Application.Apartments;
+using Application.CMS.Apartments;
 using Azure.Storage.Blobs;
 using Domain;
 using MediatR;

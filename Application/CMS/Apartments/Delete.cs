@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 using MediatR;
 using Persistence;
 
-namespace Application.Apartments
+namespace Application.CMS.Apartments
 {
     public class Delete
     {
