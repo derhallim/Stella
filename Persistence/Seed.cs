@@ -18,7 +18,8 @@ namespace Persistence
                         NumOfRooms = 2, 
                         OfferType = "Rent", 
                         Price  = 1000, 
-                        Title = "Apartment 5 1/2 in Downtown Montreal"
+                        Title = "Apartment 5 1/2 in Downtown Montreal", 
+                        ImageUrl= "https://stellaprojectstorage.blob.core.windows.net/5a8840f0-5d53-4383-0953-08d7c7631642/img3.jpg"
                     }, 
                     new Apartment{
                         City = "Montreal", 
@@ -29,7 +30,9 @@ namespace Persistence
                         NumOfRooms = 1, 
                         OfferType = "Rent", 
                         Price  = 750, 
-                        Title= "Small Studio for rent in Montreal."
+                        Title= "Small Studio for rent in Montreal.", 
+                        ImageUrl= "https://stellaprojectstorage.blob.core.windows.net/4c18688b-a12e-4dee-0954-08d7c7631642/img1.jpg"
+
                     }
                 };
                 context.Apartments.AddRange(apartments);

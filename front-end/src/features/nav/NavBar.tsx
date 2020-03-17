@@ -24,8 +24,10 @@ export const NavBar = () => {
           </Menu.Item>
 
           {/* <Menu.Item name="create-apartment" as={NavLink} to='/createapartment'>Create Apartment</Menu.Item> */}
+
           <Menu.Item name="sign-in" position="right">
-            <Button positive content="Sign in" />
+            <Button primary content="Chat" />
+            <Button secondary content="Sign in" />
           </Menu.Item>
         </Container>
       </Menu>

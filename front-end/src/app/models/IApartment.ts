@@ -9,4 +9,5 @@ export default interface IApartment{
     isAvailable: boolean; 
     city: string; 
     fullAddress: string; 
+    imageUrl: string; 
 }
