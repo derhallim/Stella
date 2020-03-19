@@ -13,7 +13,6 @@ namespace Persistence
         public DbSet<Apartment> Apartments { get; set; }
         public DbSet<City> Cities { get; set; }
         public DbSet<OfferType> OfferTypes { get; set; }
-
         public DbSet<Agency> Agencies { get; set; }
     }
 }
