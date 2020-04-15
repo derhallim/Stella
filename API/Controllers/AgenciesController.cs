@@ -9,20 +9,14 @@ using Persistence;
 
 namespace API.Controllers
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class AgenciesController : ControllerBase
+    public class AgenciesController : BaseController
     {
-        private readonly IMediator _mediator;
-        public AgenciesController(IMediator mediator)
-        {
-            _mediator = mediator;
-        }
+     
 
         [HttpGet()]
         public async Task<ActionResult<IEnumerable<Agency>>> List(string AgencyType)
         {
-            return await _mediator.Send(new List.Query(AgencyType));
+            return await Mediator.Send(new List.Query(AgencyType));
         }
 
         
