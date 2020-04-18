@@ -4,6 +4,7 @@ import Geocode from "react-geocode";
 import cmsStore from '../../app/stores/cmsStore'
 import { observer } from "mobx-react-lite";
 import { IApartmentMapInfo } from "../../app/models/IApartmentMapInfo";
+import { RootStoreContext } from "../../app/stores/rootStore";
 
 export interface IMapProps{
   width: string; 
@@ -12,11 +13,11 @@ export interface IMapProps{
 }
 
 const CompanyMap = (props: IMapProps) => {
-  const ctx = useContext(cmsStore)
+  const ctx = useContext(RootStoreContext)
   Geocode.setApiKey("AIzaSyDX4PcNox7xclNHXj-OwXz3e8JI_Jlxj7E");
   const [markersData, setMarkersData] = useState<IApartmentMapInfo[]>([]); 
 
-  const {apartments} = ctx;
+  const {apartments} = ctx.cmsStore;
   const amis: IApartmentMapInfo[] = [];
 
 

@@ -2,8 +2,16 @@ import { observable, action, computed } from "mobx";
 import { createContext } from "react";
 import agent from "../api/agent";
 import IAgency from "../models/IAgency";
+import { RootStore } from "./rootStore";
 
-class IMSStore {
+export default class IMSStore {
+
+  rootStore: RootStore; 
+
+  constructor(rootStore: RootStore){
+    this.rootStore = rootStore;
+  }
+
   @observable agencies: IAgency[] = [];
   @observable loadingInitial = false;
   @observable selectedElevatorAgency: IAgency | undefined;
@@ -36,4 +44,3 @@ class IMSStore {
   };
 }
 
-export default createContext(new IMSStore());

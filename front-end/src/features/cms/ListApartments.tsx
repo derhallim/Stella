@@ -3,10 +3,14 @@ import { Container } from 'semantic-ui-react'
 import IApartment from '../../app/models/IApartment'
 import cmsStore from '../../app/stores/cmsStore'
 import ApartmentView from './ApartmentView'
+import { RootStoreContext } from '../../app/stores/rootStore'
 
 const ListApartments = () => {
-    const ctx = useContext(cmsStore)
-    const {apartments, loadApartments}  = ctx;
+    // const rootStore = useContext(RootStoreContext);
+    const ctx = useContext(RootStoreContext);
+
+
+    const {apartments, loadApartments}  = ctx.cmsStore;
     
     useEffect(() => {
         loadApartments();

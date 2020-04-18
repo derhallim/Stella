@@ -1,6 +1,8 @@
 import axios, { AxiosResponse } from 'axios';
 import IApartment from '../models/IApartment';
 import  IAgency  from '../models/IAgency';
+import { IUser } from '../models/IUser';
+import { IUserFormValues } from '../models/IUserFormValues';
 
 axios.defaults.baseURL = 'http://localhost:5000/api';
 
@@ -37,8 +39,14 @@ const Agencies = {
     delete: (id: string) => requests.delete(`/agencies/${id}`)
 }
 
+const User = {
+    current: () : Promise<IUser> => requests.get('/user'), 
+    login: (user: IUserFormValues): Promise<IUser> => requests.post('/user/login', user)
+}
+
 export default {
     Apartments, 
     Images, 
-    Agencies
+    Agencies, 
+    User
 }

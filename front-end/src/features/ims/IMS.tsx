@@ -2,12 +2,10 @@ import React, { useContext } from "react";
 import { Container, Grid } from "semantic-ui-react";
 import { IMSNav } from "./IMSNav";
 import { Route } from "react-router-dom";
-import IMSStore from "../../app/stores/imsStore";
 import ListAgencies from "./ListAgencies";
 import IMSHome from './IMSHome'
 
 const IMS = () => {
-  const imsStore = useContext(IMSStore);
 
  
   return (

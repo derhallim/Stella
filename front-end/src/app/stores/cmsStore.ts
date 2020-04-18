@@ -4,12 +4,22 @@ import IApartment from "../models/IApartment";
 import agent from "../api/agent";
 import { IApartmentMapInfo } from "../models/IApartmentMapInfo";
 import Geocode from "react-geocode";
+import { RootStore } from "./rootStore";
 
-class CMSStore {
+export default class CMSStore {
+
+  rootStore: RootStore; 
+
+  constructor(rootStore: RootStore){
+    this.rootStore = rootStore;
+  }
+
+
   @observable apartments: IApartment[] = [];
   @observable aptMarkerInfos: IApartmentMapInfo[] = [];
 
   @action loadApartments = async () => {
+    
     try {
       this.apartments = [];
       const apartments = await agent.Apartments.list();
@@ -42,4 +52,3 @@ class CMSStore {
   @action selectApartment = (id: string) => {};
 }
 
-export default createContext(new CMSStore());

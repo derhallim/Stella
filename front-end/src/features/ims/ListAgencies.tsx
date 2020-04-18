@@ -4,6 +4,7 @@ import IMSStore from "../../app/stores/imsStore";
 import { observer } from "mobx-react-lite";
 import imsStore from "../../app/stores/imsStore";
 import IAgency from "../../app/models/IAgency";
+import { RootStoreContext } from "../../app/stores/rootStore";
 export interface IListAgenciesProps {
   agencyType: string;
   agencyTypeTitle: string;
@@ -14,8 +15,8 @@ const ListAgencies = (props: any) => {
   // let agencies: IAgency[] = [];
 
   const agencyType = props.match.params["AgencyType"];
-  const ctx = useContext(imsStore);
-  const { agencies, loadAgencies } = ctx;
+  const ctx = useContext(RootStoreContext);
+  const { agencies, loadAgencies } = ctx.imsStore;
 
   // useEffect(() => {
   //   const agencyType = props.match.params["AgencyType"];
