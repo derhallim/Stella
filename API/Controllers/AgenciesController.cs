@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using Application.IMS.Agencies;
 using Domain;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Persistence;
 
@@ -14,6 +15,7 @@ namespace API.Controllers
      
 
         [HttpGet()]
+        [Authorize]
         public async Task<ActionResult<IEnumerable<Agency>>> List(string AgencyType)
         {
             return await Mediator.Send(new List.Query(AgencyType));
