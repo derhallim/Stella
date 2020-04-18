@@ -7,6 +7,7 @@ using FluentValidation;
 using Microsoft.AspNetCore.Identity;
 using System;
 using System.Net;
+using Application.Interfaces;
 
 namespace Application.User
 {
@@ -32,9 +33,11 @@ namespace Application.User
         {
             private readonly UserManager<AppUser> _userManager;
             private readonly SignInManager<AppUser> _signInManager;
+            private readonly IJwtGenerator _ijwtGenerator;
 
-            public Handler(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager)
+            public Handler(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager, IJwtGenerator ijwtGenerator)
             {
+                _ijwtGenerator = ijwtGenerator;
                 _signInManager = signInManager;
                 _userManager = userManager;
 
@@ -42,25 +45,28 @@ namespace Application.User
 
             public async Task<User> Handle(Query request, CancellationToken canellationToken)
             {
-                    var user = await _userManager.FindByEmailAsync(request.Email);
-                    
-                    if(user == null){
-                        throw new Exception(HttpStatusCode.Unauthorized.ToString());
-                    }
+                var user = await _userManager.FindByEmailAsync(request.Email);
 
-                    var result = await _signInManager.CheckPasswordSignInAsync(user, request.Password, false);
-
-                    if(result.Succeeded){
-                        //TODO: generate token
-                        return new User{
-                            DisplayName = user.DisplayName, 
-                            Token = "this will be a token", 
-                            Image = null, 
-                            UserName = user.UserName
-                        };
-                    }
-                    
+                if (user == null)
+                {
                     throw new Exception(HttpStatusCode.Unauthorized.ToString());
+                }
+
+                var result = await _signInManager.CheckPasswordSignInAsync(user, request.Password, false);
+
+                if (result.Succeeded)
+                {
+                    //TODO: generate token
+                    return new User
+                    {
+                        DisplayName = user.DisplayName,
+                        Token = _ijwtGenerator.CreateToken(user),
+                        Image = null,
+                        UserName = user.UserName
+                    };
+                }
+
+                throw new Exception(HttpStatusCode.Unauthorized.ToString());
             }
         }
     }
