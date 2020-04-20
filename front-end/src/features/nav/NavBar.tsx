@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Menu, Container, Button } from "semantic-ui-react";
 import image from "./logo.png";
 import { NavLink } from "react-router-dom";
+import { RootStoreContext } from "../../app/stores/rootStore";
 export const NavBar = () => {
+  const rootStore = useContext(RootStoreContext)
+  const {isLoggedIn, user} = rootStore.userStore;
+
   return (
     <div>
       <Menu borderless inverted fixed="top">
@@ -13,12 +17,12 @@ export const NavBar = () => {
           <Menu.Item name="apartments" as={NavLink} to="/apartments">
             All Apartments
           </Menu.Item>
-          <Menu.Item name="cms" as={NavLink} to="/cms">
+       <Menu.Item name="cms" as={NavLink} to="/cms" >
             CMS
-          </Menu.Item>
-          <Menu.Item name="ims" as={NavLink} to="/ims">
+  </Menu.Item>
+     <Menu.Item name="ims" as={NavLink} to="/ims">
             IMS
-          </Menu.Item>
+  </Menu.Item>
           <Menu.Item name="aboutus" as={NavLink} to="/aboutus">
             About Us
           </Menu.Item>
@@ -27,7 +31,8 @@ export const NavBar = () => {
 
           <Menu.Item name="sign-in" position="right">
             <Button primary content="Chat" />
-            <Button secondary content="Sign in" />
+            {user ? <span>Welcome {user.displayName}</span> : <Button secondary content="Sign in" as={NavLink} to='/login' />
+}  
           </Menu.Item>
         </Container>
       </Menu>

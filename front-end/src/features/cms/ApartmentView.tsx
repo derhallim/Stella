@@ -1,6 +1,7 @@
 import React from "react";
 import {  Card } from "semantic-ui-react";
 import IApartment from "../../app/models/IApartment";
+import styles from './ApartmentView.module.scss'
 
 const ApartmentView = ({apartment}: {apartment: IApartment}) => {
   return (
@@ -10,6 +11,7 @@ const ApartmentView = ({apartment}: {apartment: IApartment}) => {
         meta={`Number of rooms ${apartment.numOfRooms}`}
         description={apartment.description}
         extra={apartment.city}
+        className={styles.apartmentContainer}
       />
   );
 };
