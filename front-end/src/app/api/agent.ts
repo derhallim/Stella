@@ -5,6 +5,7 @@ import { IUser } from '../models/IUser';
 import { IUserFormValues } from '../models/IUserFormValues';
 import { toast } from 'react-toastify';
 import { history } from '../..';
+import ICity from '../models/ICity';
 axios.defaults.baseURL = 'http://localhost:5000/api';
 
 axios.interceptors.response.use(undefined, error => {
@@ -61,10 +62,17 @@ const User = {
     current: () : Promise<IUser> => requests.get('/user'), 
     login: (user: IUserFormValues): Promise<IUser> => requests.post('/user/login', user)
 }
-
+const Cities = {
+    list: () : Promise<ICity[]> => requests.get('/cities'), 
+    details: (id: string) => requests.get(`/cities/${id}`), 
+    create: (city: ICity) => requests.post('/cities',city ), 
+    update: (city: ICity) => requests.put(`/cities/${city.id}`, city), 
+    delete: (id: string) => requests.delete(`/cities/${id}`)
+}
 export default {
     Apartments, 
     Images, 
     Agencies, 
-    User
+    User,
+    Cities
 }

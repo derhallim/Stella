@@ -1,4 +1,6 @@
+using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using Domain;
@@ -24,7 +26,9 @@ namespace Application.CMS.Apartments
 
             public async Task<List<Apartment>> Handle(Query request, CancellationToken cancellationToken)
             {
-                var apartments = await _context.Apartments.ToListAsync(); 
+                Random rand = new Random();
+                int toSkip = rand.Next(0, _context.Apartments.Count());
+                var apartments = await _context.Apartments.Skip(toSkip).ToListAsync();                
                 return apartments;
             }
         }

@@ -17,6 +17,10 @@ const CMSNav = () => {
         <Icon name="list ul" />
         View All Apartments
       </Menu.Item>
+      <Menu.Item name="create-city" as={NavLink} to="/cms/create-city">
+        <Icon name="add" />
+        Add City
+      </Menu.Item>
     </Menu>
   );
 };

@@ -5,6 +5,7 @@ import agent from "../api/agent";
 import { IApartmentMapInfo } from "../models/IApartmentMapInfo";
 import Geocode from "react-geocode";
 import { RootStore } from "./rootStore";
+import ICity from "../models/ICity";
 
 export default class CMSStore {
 
@@ -17,7 +18,7 @@ export default class CMSStore {
 
   @observable apartments: IApartment[] = [];
   @observable aptMarkerInfos: IApartmentMapInfo[] = [];
-
+  @observable cities: ICity[] = [];
   @action loadApartments = async () => {
     
     try {
@@ -50,5 +51,13 @@ export default class CMSStore {
   @action openCreateForm = () => {};
 
   @action selectApartment = (id: string) => {};
+  @action createCity = async (city: ICity) => {
+    try {
+      await agent.Cities.create(city);
+      this.cities.push(city);
+    } catch (err) {
+      console.log(err);
+    } finally {
+    }
+  };
 }
-
