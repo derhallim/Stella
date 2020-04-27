@@ -1,0 +1,18 @@
+{
+    "name": "Stella",
+    "description": "",
+    "services": [
+        {
+            "type": "endpoint",
+            "appId": "",
+            "appPassword": "",
+            "endpoint": "http://localhost:3978/api/messages",
+            "id": "f3e5fd20-879e-11ea-8978-0965656b6dd9",
+            "name": "http://localhost:3978/api/messages"
+        }
+    ],
+    "padlock": "",
+    "version": "2.0",
+    "overrides": null,
+    "path": "D:\\Master\\SE\\RealEstates\\Bot\\Stella.bot"
+}
