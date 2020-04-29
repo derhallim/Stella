@@ -3,17 +3,13 @@
   "type": "AdaptiveCard",
   "version": "1.0",
   "body": [
-    {
-      "type": "Image",
-      "url": "https://www.lallemand.com/wp-content/uploads/2020/04/Lallemand_Corporate_Mini_Icon.jpg",
-      "size": "stretch"
-    },
+  
     {
       "type": "TextBlock",
       "spacing": "medium",
       "size": "default",
       "weight": "bolder",
-      "text": "Welcome to the new Lallemand modern workplace",
+      "text": "Welcome to the new Stella site",
       "wrap": true,
       "maxLines": 0
     },
@@ -21,7 +17,7 @@
       "type": "TextBlock",
       "size": "default",
       "isSubtle": true,
-      "text": "Now that we're going to be using cloud & Teams as a starting points, here are some links to get you started:",
+      "text": "Please select one of the following options:",
       "wrap": true,
       "maxLines": 0
     }
@@ -29,18 +25,18 @@
   "actions": [
     {
       "type": "Action.OpenUrl",
-      "title": "What is Teams?",
+      "title": "Looking for a new apartment? Try our search page: ",
       "url": "https://docs.microsoft.com/en-us/azure/bot-service/?view=azure-bot-service-4.0"
     },
     {
       "type": "Action.OpenUrl",
-      "title": "Teams best features",
-      "url": "https://stackoverflow.com/questions/tagged/botframework"
+      "title": "About us",
+      "url": "https://stella.net"
     },
     {
       "type": "Action.OpenUrl",
-      "title": "Teams Training",
-      "url": "https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-howto-deploy-azure?view=azure-bot-service-4.0"
+      "title": "Visit our FAQ pagex",
+      "url": "https://stella.net"
     }
   ]
 }
