@@ -15,9 +15,10 @@ namespace API.Controllers
     {
         private readonly DataContext _context;
         private readonly IMediator _mediator;
-        public ApartmentsController(IMediator mediator)
+        public ApartmentsController(IMediator mediator, DataContext context)
         {
             _mediator = mediator;
+            _context = context;
         }
 
         [HttpGet]
@@ -45,6 +46,16 @@ namespace API.Controllers
         public async Task<ActionResult<Unit>> Delete(Guid id)
         {
             return await _mediator.Send(new Delete.Command { id = id });
+        }        
+
+        [HttpPost]
+        public async Task<ActionResult<Apartment>> Create([FromBody] Apartment apartment)
+        {
+            apartment.Id = System.Guid.NewGuid();
+            var aprtment = await _context.Apartments.AddAsync(apartment);
+            await _context.SaveChangesAsync();
+            return Ok(aprtment);
         }
+
     }
 }

@@ -60,4 +60,18 @@ export default class CMSStore {
     } finally {
     }
   };
+
+  @action loadCities = async () => {
+    
+    try {
+      this.cities = [];
+      const cities = await agent.Cities.list();
+      cities.forEach(city => {
+        this.cities.push(city);
+      });
+    } catch (err) {
+      console.log(err);
+    } finally {
+    }
+  };
 }
